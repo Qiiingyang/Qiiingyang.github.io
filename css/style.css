@@ -1347,3 +1347,43 @@ h1 {
 	font-size:14px;
 	letter-spacing:0;
 }
+.textbecenter{
+	color: white;
+	position: absolute;
+	left:50%;
+	top:50%;
+	font-size: 13px;
+	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}
+.statbecenter{
+	color: white;
+	position: absolute;
+	left:50%;
+	top:50%;
+	font-size: 12px;
+	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}
+.stat3becenter{
+	color: white;
+	position: absolute;
+	left:50%;
+	top:50%;
+	font-size: 6px;
+	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}
+.stat2becenter{
+	color: white;
+	position: absolute;
+	left:50%;
+	top:50%;
+	font-size: 9px;
+	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}
