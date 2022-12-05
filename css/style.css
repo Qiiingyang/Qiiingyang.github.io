@@ -49,7 +49,7 @@ a:active {
 	font-weight: bolder;
 	text-align: center;
 	font-size: 35px;
-	padding: 60px 200px; 
+	padding: 60px 200px 20px 200px; 
 }
 
 .textins1 { 
@@ -109,10 +109,163 @@ a:active {
 	text-align: center;
 	color:rgb(0, 0, 0);
 	font-size: 16px;
-	padding: 60px 300px; 
+	padding: 60px 300px 10px 300px; 
 }
 
 .keyboardpic { 
-	width:1008px;
-	padding:100px 50px;
+	width:1020px;
+	padding:50px 0px 0px 190px;
+}
+
+.Qkey { 
+	position:absolute;
+	width:54px;
+	left:389px;
+	top:227px;
+}
+
+.blankkey { 
+	position:absolute;
+	width:265px;
+	left:566px;
+	top:404px;
+}
+
+.upkey { 
+	position:absolute;
+	width:54px;
+	left:930px;
+	top:404px;
+}
+
+.downkey { 
+	position:absolute;
+	width:54px;
+	left:930px;
+	top:435px;
+}
+
+.leftkey { 
+	position:absolute;
+	width:54px;
+	left:870px;
+	top:435px;
+}
+
+.rightkey { 
+	position:absolute;
+	width:54px;
+	left:990px;
+	top:435px;
+}
+
+.gamepadpic { 
+	width:877px;
+	padding:50px 0px 0px 270px;
+}
+
+.titleins4 { 
+	font-family: 'Amatic SC';
+	font-weight: bolder;
+	text-align: center;
+	font-size: 35px;
+	padding: 35px 200px 20px 200px; 
+}
+
+.rights { 
+	position:absolute;
+	width:5px;
+	left:632px;
+	top:280px;
+}
+
+.lefts { 
+	position:absolute;
+	width:5px;
+	left:560px;
+	top:280px;
+}
+
+.ups { 
+	position:absolute;
+	width:8px;
+	left:595px;
+	top:246px;
+}
+
+.downs { 
+	position:absolute;
+	width:8px;
+	left:595px;
+	top:317px;
+}
+
+.controllerbutton { 
+	position:absolute;
+	width:56px;
+	left:570px;
+	top:256px;
+}
+
+.Xbutton { 
+	position:absolute;
+	width:30px;
+	left:806px;
+	top:251px;
+}
+
+.Ybutton { 
+	position:absolute;
+	width:30px;
+	left:778px;
+	top:284px;
+}
+
+.artwork1 { 
+	position:absolute;
+	width:355px;
+	left:555px;
+	top:94px;
+}
+
+.artwork2_1 { 
+	position:absolute;
+	width:311px;
+	left:182px;
+	top:234px;
+}
+
+.artwork2_2 { 
+	position:absolute;
+	width:252px;
+	left:585px;
+	top:234px;
+}
+
+.artwork2_3 { 
+	position:absolute;
+	width:341px;
+	left:929px;
+	top:234px;
+}
+
+.artwork3 { 
+	position:absolute;
+	width:1000px;
+	left:228px;
+	top:-30px;
+}
+
+.artwork4-1 { 
+	position:absolute;
+	width:696px;
+	left:116px;
+	top:151px;
+}
+
+.artwork4-2 { 
+	position:absolute;
+	width:245px;
+	left:1139px;
+	top:50px;
 }
