@@ -1,13 +1,104 @@
 body {
     background-color: white;
-    font-family: 'Poppins';
 }
-.e103_749 { 
-	width:77px;
-	height:252px;
+
+.title { 
+	font-family: 'Amatic SC';
+	font-weight: bolder;
+	text-align: center;
+	color:rgba(255, 255, 255, 1);
+	font-size: 56px;
+	padding: 200px 200px; 
+}
+
+.textindex {
+	font-family:Poppins;
+	font-weight: bold;
+	text-align:center;
+	font-size:16px;
+	padding: 50px 200px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(103, 225, 203);
+}
+  
+a:active {
+    color: rgb(103, 225, 203);
+}
+
+.titleins1 { 
+	font-family: 'Amatic SC';
+	font-weight: bolder;
+	text-align: center;
+	color:rgb(0, 0, 0);
+	font-size: 40px;
+	padding: 120px 200px 50px 200px; 
+}
+
+.titleins2 { 
+	font-family: 'Amatic SC';
+	font-weight: bolder;
+	text-align: center;
+	font-size: 35px;
+	padding: 60px 200px; 
+}
+
+.textins1 { 
+	font-family:Poppins;
+	font-weight: bolder;
+	text-align: justify;
+	color:rgb(0, 0, 0);
+	font-size: 16px;
+	padding: 20px 300px; 
+}
+
+.rightbutton { 
 	position:absolute;
-	left:0px;
-	top:236px;
-	background-repeat:no-repeat;
-	background-size:cover;
+	width:13px;
+	left:1407px;
+	top:340px;
+}
+
+.leftbutton { 
+	position:absolute;
+	width:13px;
+	left:20px;
+	top:340px;
+}
+
+.upbutton { 
+	position:absolute;
+	width:26px;
+	left:50%;
+	top:16px;
+}
+
+.downbutton { 
+	position:absolute;
+	width:26px;
+	left:50%;
+	top:710px;
+}
+
+.homepagebutton { 
+	position:absolute;
+	width:60px;
+	left:28px;
+	top:660px;
+}
+
+.helpbutton { 
+	position:absolute;
+	width:60px;
+	left:1354px;
+	top:660px;
 }
