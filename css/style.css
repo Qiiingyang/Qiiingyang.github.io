@@ -269,3 +269,58 @@ a:active {
 	left:1111px;
 	top:65px;
 }
+
+.artwork5_1 { 
+	width:1059px;
+	padding:60px 0px 0px 200px;
+}
+
+.left6 { 
+	position:absolute;
+	width:40px;
+	left:227px;
+	top:340px;
+}
+
+.right6 { 
+	position:absolute;
+	width:40px;
+	left:1211px;
+	top:340px;
+}
+
+.mutebutton { 
+	position:absolute;
+	width:40px;
+	left:1211px;
+	top:613px;
+}
+
+.artwork5_audio { 
+	position:absolute;
+	width:0px;
+	left:1222px;
+	top:626px;
+}
+
+.artwork6_1 { 
+	position:absolute;
+	width:263px;
+	left:155px;
+	top:223px;
+}
+
+.artwork6_2 { 
+	position:absolute;
+	width:441px;
+	left:508px;
+	top:166px;
+}
+
+.artwork6_3 { 
+	position:absolute;
+	width:247px;
+	left:1039px;
+	top:244px;
+}
+
