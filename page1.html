@@ -1,28 +1,611 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/1.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/index.js"></script>
 
-	<title>Watermelon &mdash; An Accessible, Interactive Online Exhibition</title>
+  <link rel="stylesheet" type="text/css" href="css/jquery.classyloupe.min.css" />
+
+
+  <style>
+    .container {
+      position: absolute;
+      width: 50%;
+    }
+
+    .absolute {
+      position: absolute;
+    }
+
+    .zIndex99 {
+      z-index: 99;
+    }
+
+    .overlay1 {
+      position: absolute;
+      height: 536px;
+      width: 355px;
+      left: 555px;
+      top: 94px;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #3f609b;
+    }
+
+    .container:hover .overlay1 {
+      opacity: 0.5;
+    }
+
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      /* background-image: none !important; */
+      color: black;
+    }
+
+    .swiper-container .swiper-slide {
+      overflow: visible !important;
+    }
+    .flex-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  </style>
 </head>
+
 <body>
-	<div>
-		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/1.png" alt="artwork1" class="artwork1">
-	</div>
+  <p>
+    <!-- <img   id="img_02" src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/2_1.png"
+    alt="artwork2_1" class="artwork2_1"> -->
+  </p>
 
-	<div>
-		<a href="page2.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button.png" alt="rightbutton" class="rightbutton"></a>
-		<a href="page3.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button.png" alt="leftbutton" class="leftbutton"></a>
-		<a href="page7-1.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button.png" alt="upbutton" class="upbutton"></a>
-		<a href="page4.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button.png" alt="downbutton" class="downbutton"></a>
-	</div>
 
-	<div>
-		<a href="index.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button.png" alt="homepagebutton" class="homepagebutton"></a>
-		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png" alt="helpbutton" class="helpbutton">
-	</div>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide-1">
+        <div class="container">
+          <img id="img_04" src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/1.png"
+            alt="artwork1" class="artwork1 ">
+          <div class="overlay1">
+            <div class="cura1">童年时，记忆中的夏天总是从母亲手中递来的一角西瓜开始，因而在我个人历史的怀旧中，西瓜是夏天的窗户。<br><br>I always remember, during my
+              childhood, that summer began with a dime of watermelon handed to me by my mother. Thus, in my personal
+              history of nostalgia, watermelon is the window to summertime.<br><br><i>占位，小区居民，2022<br>Placeholder,
+                Neighbors, 2022</i></div>
+          </div>
+        </div>
+
+        <div>
+          <!-- <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button.png"
+            alt="rightbutton" class="rightbutton swiper-button-next">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button.png"
+            alt="leftbutton" class="leftbutton swiper-button-prev"> -->
+          <!-- <a href="page7-1.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button.png"
+              alt="upbutton" class="upbutton"></a>
+          <a href="page4.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button.png"
+              alt="downbutton" class="downbutton"></a> -->
+        </div>
+
+        <div>
+          <a href="index.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button.png"
+              alt="homepagebutton" class="homepagebutton"></a>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png"
+            alt="helpbutton" class="helpbutton">
+        </div>
+      </div>
+
+
+      <div class="swiper-slide slide-2">
+        <div>
+          <video class="artwork3" width="1000" height="800" controls>
+            <source src="https://video.wixstatic.com/video/12307a_0c58a0e6af934cf3b1a23b2d7e6b5538/1080p/mp4/file.mp4"
+              type="video/mp4">
+          </video>
+        </div>
+
+        <div>
+          <!-- <a href="page1.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button.png"
+              alt="rightbutton" class="rightbutton"></a>
+          <a href="page2.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button.png"
+              alt="leftbutton" class="leftbutton"></a> -->
+          <!-- <a href="page9.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button.png" alt="upbutton" class="upbutton"></a> -->
+          <!-- <a href="page6.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button.png" alt="downbutton" class="downbutton"></a> -->
+        </div>
+
+        <div>
+          <a href="index.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button.png"
+              alt="homepagebutton" class="homepagebutton"></a>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png"
+            alt="helpbutton" class="helpbutton">
+        </div>
+
+
+
+        <div>
+          <!-- <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button.png"
+            alt="rightbutton" class="rightbutton swiper-button-next">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button.png"
+            alt="leftbutton" class="leftbutton swiper-button-prev"> -->
+          <!-- <a href="page8.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button.png"
+              alt="upbutton" class="upbutton"></a>
+          <a href="page5.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button.png"
+              alt="downbutton" class="downbutton"></a> -->
+        </div>
+
+        <div>
+          <a href="index.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button.png"
+              alt="homepagebutton" class="homepagebutton"></a>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png"
+            alt="helpbutton" class="helpbutton">
+        </div>
+      </div>
+
+
+      <div class="swiper-slide slide-3">
+        <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/2_1.png"
+          alt="artwork2_1" class="artwork2_1 louped">
+        <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/2_2.png"
+          alt="artwork2_2" class="artwork2_2 louped">
+        <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/2_3.png"
+          alt="artwork2_3" class="artwork2_3 louped">
+
+        <div>
+          <!-- <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button.png"
+          alt="rightbutton" class="rightbutton swiper-button-next">
+        <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button.png"
+          alt="leftbutton" class="leftbutton swiper-button-prev"> -->
+          <!-- <a href="page8.html"><img
+            src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button.png"
+            alt="upbutton" class="upbutton"></a>
+        <a href="page5.html"><img
+            src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button.png"
+            alt="downbutton" class="downbutton"></a> -->
+        </div>
+
+        <div>
+          <a href="index.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button.png"
+              alt="homepagebutton" class="homepagebutton"></a>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png"
+            alt="helpbutton" class="helpbutton">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide-4">
+
+        <div class="wrapper" onmouseenter="stoptimer()" onmouseleave="starttimer()">
+          <ul class="imglist">
+            <li> <img src="images/5_1.png" class="picture active"></li>
+            <li> <img src="images/5_2.png" class="picture"></li>
+            <li> <img src="images/5_3.png" class="picture"></li>
+            <li> <img src="images/5_4.png" class="picture"></li>
+            <li> <img src="images/5_5.png" class="picture"></li>
+            <li> <img src="images/5_6.png" class="picture"></li>
+          </ul>
+
+          <ul class="dotlist">
+            <li class="dot active" index='0' onclick="dotSkipper(0)"></li>
+            <li class="dot" index='1' onclick="dotSkipper(1)"></li>
+            <li class="dot" index='2' onclick="dotSkipper(2)"></li>
+            <li class="dot" index='3' onclick="dotSkipper(3)"></li>
+            <li class="dot" index='4' onclick="dotSkipper(4)"></li>
+            <li class="dot" index='5' onclick="dotSkipper(5)"></li>
+          </ul>
+          <div id="left" class="btn" type="button">
+            <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_6.png"
+              alt="left6" class="">
+          </div>
+          <div id="right" class="btn" type="button">
+            <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_6.png"
+              alt="right6" class="">
+          </div>
+        </div>
+        <!-- <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/5_1.png" alt="artwork5_1" class="artwork5_1"> -->
+        <div>
+          <!-- <a href="page6.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button_b.png"
+              alt="rightbuttonb" class="rightbutton"></a>
+          <a href="page4.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button_b.png"
+              alt="leftbuttonb" class="leftbutton"></a> -->
+          <!-- <a href="page2.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button_b.png" alt="upbuttonb" class="upbutton"></a> -->
+          <!-- <a href="page8.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button_b.png" alt="downbuttonb" class="downbutton"></a> -->
+        </div>
+
+        <div>
+          <a href="index.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button_b.png"
+              alt="homepagebuttonb" class="homepagebutton"></a>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button_b.png"
+            alt="helpbuttonb" class="helpbutton">
+        </div>
+
+        <div>
+          <iframe class="artwork5_audio" width="0" height="0"
+            src="https://www.youtube.com/embed/zLd-0MDtjvQ?autoplay=1">
+          </iframe>
+        </div>
+
+        <div>
+          <!-- <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_6.png"
+            alt="left6" class="left6">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_6.png"
+            alt="right6" class="right6"> -->
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/mute_button.png"
+            alt="mutebutton" class="mutebutton">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide-5">
+
+        <!-- === -->
+        <div>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/4_1.png"
+            alt="artwork4_1" class="artwork4_1 louped">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/4_2.png"
+            alt="artwork4_2" class="artwork4_2 louped">
+        </div>
+
+        <div>
+          <!-- <a href="#"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button.png"
+              alt="rightbutton" class="rightbutton swiper-button-next"></a>
+          <a href="page6.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button.png"
+              alt="leftbutton" class="leftbutton"></a> -->
+          <!-- <a href="page1.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button.png" alt="upbutton" class="upbutton"></a> -->
+          <!-- <a href="page7-1.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button.png" alt="downbutton" class="downbutton"></a> -->
+        </div>
+
+        <div>
+          <a href="index.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button.png"
+              alt="homepagebutton" class="homepagebutton"></a>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png"
+            alt="helpbutton" class="helpbutton">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide-6">
+        <div class="bolck refresh">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_1.png"
+            alt="artwork7_1" class="artwork7_1">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_2.png"
+            alt="artwork7_2" class="artwork7_2">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_3.png"
+            alt="artwork7_3" class="artwork7_3">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_4.png"
+            alt="artwork7_4" class="artwork7_4">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_5.png"
+            alt="artwork7_5" class="artwork7_5">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_6.png"
+            alt="artwork7_6" class="artwork7_6">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_7.png"
+            alt="artwork7_7" class="artwork7_7">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_8.png"
+            alt="artwork7_8" class="artwork7_8">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_9.png"
+            alt="artwork7_9" class="artwork7_9">
+        </div>
+
+        <div class="hide refresh">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_9.png"
+            alt="artwork7_9" class="artwork7_1">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_3.png"
+            alt="artwork7_3" class="artwork7_2">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_2.png"
+            alt="artwork7_2" class="artwork7_3">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_5.png"
+            alt="artwork7_5" class="artwork7_4">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_4.png"
+            alt="artwork7_4" class="artwork7_5_2">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_1.png"
+            alt="artwork7_1" class="artwork7_6">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_6.png"
+            alt="artwork7_6" class="artwork7_7">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_7.png"
+            alt="artwork7_7" class="artwork7_8_2">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_8.png"
+            alt="artwork7_8" class="artwork7_9">
+        </div>
+
+        <div class="hide refresh">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_6.png"
+            alt="artwork7_6" class="artwork7_1">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_9.png"
+            alt="artwork7_9" class="artwork7_2">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_7.png"
+            alt="artwork7_7" class="artwork7_3">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_5.png"
+            alt="artwork7_5" class="artwork7_4">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_3.png"
+            alt="artwork7_3" class="artwork7_5">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_4.png"
+            alt="artwork7_4" class="artwork7_6">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_8.png"
+            alt="artwork7_8" class="artwork7_7">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_2.png"
+            alt="artwork7_2" class="artwork7_8_2">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/7_1.png"
+            alt="artwork7_1" class="artwork7_9">
+        </div>
+
+
+        <div>
+          <!-- <a href="page8.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button.png"
+              alt="rightbutton" class="rightbutton"></a>
+          <a href="page9.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button.png"
+              alt="leftbutton" class="leftbutton"></a> -->
+          <!-- <a href="page4.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button.png" alt="upbutton" class="upbutton"></a> -->
+          <!-- <a href="page1.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button.png" alt="downbutton" class="downbutton"></a> -->
+        </div>
+
+        <div>
+          <a href="index.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button.png"
+              alt="homepagebutton" class="homepagebutton"></a>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/update_button.png"
+            alt="updatebutton" onclick="refresh()" class="updatebutton cursor"
+            style="display: block; position: absolute; z-index: 9999999;">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png"
+            alt="helpbutton" class="helpbutton">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide-7">
+        <div>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/6_1.png"
+            alt="artwork6_1" class="artwork6_1 louped">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/6_2.png"
+            alt="artwork6_2" class="artwork6_2 louped">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/6_3.png"
+            alt="artwork6_3" class="artwork6_3 louped">
+        </div>
+
+        <div>
+          <!-- <a href="page4.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button_b.png"
+              alt="rightbuttonb" class="rightbutton"></a>
+          <a href="page5.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button_b.png"
+              alt="leftbuttonb" class="leftbutton"></a> -->
+          <!-- <a href="page3.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button_b.png" alt="upbuttonb" class="upbutton"></a> -->
+          <!-- <a href="page9.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button_b.png" alt="downbuttonb" class="downbutton"></a> -->
+        </div>
+
+        <div>
+          <a href="index.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button_b.png"
+              alt="homepagebuttonb" class="homepagebutton"></a>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button_b.png"
+            alt="helpbuttonb" class="helpbutton">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide-8">
+        <div class="flex-center">
+          <div style="padding:20% 0 0 0;position:relative;">
+            <iframe class="artwork9_1"
+              src="https://player.vimeo.com/video/777904442?h=3d3b7d5fd1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="" title="111.mp4"></iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+  
+          <div style="padding:20% 0 0 0;position:relative;">
+            <iframe class="artwork9_2"
+              src="https://player.vimeo.com/video/777905591?h=55c71b0802&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="" title="222.mp4"></iframe>
+          </div>
+        </div>
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
+
+        <div>
+          <!-- <a href="page7-1.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button.png"
+              alt="rightbutton" class="rightbutton"></a>
+          <a href="page8.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button.png"
+              alt="leftbutton" class="leftbutton"></a> -->
+          <!-- <a href="page6.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button.png" alt="upbutton" class="upbutton"></a> -->
+          <!-- <a href="page3.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button.png" alt="downbutton" class="downbutton"></a> -->
+        </div>
+
+        <div>
+          <a href="index.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button.png"
+              alt="homepagebutton" class="homepagebutton"></a>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png"
+            alt="helpbutton" class="helpbutton">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide-9">
+        <div>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/8_1.png"
+            alt="artwork8_1" class="artwork8_1 louped">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/8_1.png"
+            alt="artwork8_2" class="artwork8_2 louped">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/8_1.png"
+            alt="artwork8_3" class="artwork8_3 louped">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/8_1.png"
+            alt="artwork8_4" class="artwork8_4 louped">
+        </div>
+
+        <div>
+          <!-- <a href="page9.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button_b.png"
+              alt="rightbuttonb" class="rightbutton"></a>
+          <a href="page7.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button_b.png"
+              alt="leftbuttonb" class="leftbutton"></a> -->
+          <!-- <a href="page5.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_button_b.png" alt="upbuttonb" class="upbutton"></a> -->
+          <!-- <a href="page2.html"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_button_b.png" alt="downbuttonb" class="downbutton"></a> -->
+        </div>
+
+        <div>
+          <a href="index.html"><img
+              src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button_b.png"
+              alt="homepagebuttonb" class="homepagebutton"></a>
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button_b.png"
+            alt="helpbuttonb" class="helpbutton">
+        </div>
+        <!-- ======= -->
+
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev "></div>
+    <!--左箭头-->
+    <div class="swiper-button-next "></div>
+    <!--右箭头-->
+  </div>
+  <div class="pcHidden" style="line-height:500px; text-align:center;">ohter content</div>
+  <!-- Swiper JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+
+  <script src="./js/1.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script src="js/jquery.easing.1.2.js"></script>
+  <script src="js/jquery.classyloupe.min.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+
+
+    var refreshDom = document.getElementsByClassName('refresh');
+
+    function refresh() {
+      console.log(Math.floor(Math.random() * (1 - 2 + 4) + 0));
+      let num = Math.floor(Math.random() * (1 - 2 + 4) + 0)
+      for (let i = 0; i < refreshDom.length; i++) {
+        refreshDom[i].classList.remove('hide', 'bolck');
+        refreshDom[i].classList.add('hide');
+        if (i == num) {
+          refreshDom[i].classList.add('bolck');
+        }
+      }
+
+    }
+
+    $('.louped').ClassyLoupe({
+      maxSize: 500,
+      size: 100,
+      loupeToggleSpeed: 'fast',
+      overlay: false,
+      canZoom: true,
+      zoom: 150
+    });
+
+
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      cubeEffect: {
+        slideShadows: false,
+        shadow: true,
+        shadowOffset: 0,
+        shadowScale: 0
+      },
+      keyboard: {
+        enabled: true,
+        pageUpDown: false,
+      },
+      loop: false,
+
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+
+    if (swiper.activeIndex == 0) {
+      let show = false;
+      document.onkeydown = function (event) {
+        console.log(event);
+        console.log(swiper.activeIndex);
+        if (event.keyCode == 81) {
+          var overlay1 = document.getElementsByClassName('overlay1')[0]
+          console.log(overlay1);
+          if (show) {
+            overlay1.style.opacity = 0
+            show = !show
+          } else {
+            overlay1.style.opacity = .5
+            show = !show
+          }
+
+        }
+      }
+    }
+
+
+    //0.625   5/8
+    function homeResize() {
+
+      WinHeight = $(window).height();
+      WinWidth = $(window).width();
+      fullBox = $(".swiper-slide .full");
+
+      if (WinWidth > 768) {
+        if (WinWidth / WinHeight > 1.6) {
+          fullBox.width("100%").height(WinWidth * 0.625).css({
+            "position": 'absolute',
+            "left": "0px",
+            "top": (WinHeight - fullBox.height()) / 2 + "px"
+          });
+        } else {
+          fullBox.width(WinHeight * 1.6).height("100%").css({
+            "position": 'absolute',
+            "left": "-" + (fullBox.width() - WinWidth) / 2 + "px",
+            "top": "0px"
+          });
+        }
+      } else {
+        fullBox.width("100%").height("auto").css({
+          "position": 'static',
+        });
+      }
+    }
+
+    homeResize();
+
+    $(window).resize(function () {
+      homeResize();
+    });
+  </script>
+
 </body>
+
 </html>
