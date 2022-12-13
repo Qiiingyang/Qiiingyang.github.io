@@ -700,3 +700,57 @@ a:active {
 	left:485px;
 	top:222px;
 }
+
+.over1 {
+	position: absolute;
+	height: 536px;
+	width: 355px;
+}
+
+.over2 {
+	position: absolute;
+	height: 256px;
+	width: 1088px;
+}
+
+.over3 {
+	position: absolute;
+	height: 800px;
+    width: 1000px;
+}
+
+.over4 {
+	position: absolute;
+	height: 596px;
+    width: 1059px;
+}
+
+.over5 {
+	position: absolute;
+	height:375px;
+    width:441px;
+}
+
+.over6 {
+	position: absolute;
+	height: 476px;
+	width:696px;
+}
+
+.over7 {
+	position: absolute;
+	height: 567px;
+	width: 755px;
+}
+
+.over8 {
+	position: absolute;
+	height: 572px;
+    width: 578px;
+}
+
+.over9 {
+	position: absolute;
+	height: 237px;
+	width:850px;
+}
