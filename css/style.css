@@ -266,6 +266,13 @@ a:active {
 	top:207px;
 }
 
+.Okey { 
+	position:absolute;
+	width:54px;
+	left:809px;
+	top:207px;
+}
+
 .blankkey { 
 	position:absolute;
 	width:265px;
@@ -690,6 +697,6 @@ a:active {
 	text-align: center;
 	font-size: 16px;
 	position: absolute;
-	left:460px;
-	top:220px;
+	left:485px;
+	top:222px;
 }
