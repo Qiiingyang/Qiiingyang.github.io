@@ -22,11 +22,6 @@
       z-index: 99;
     }
 
-    .container {
-      position: absolute;
-      width: 50%;
-    }
-
     .overlay1 {
       position: absolute;
       height: 536px;
@@ -35,11 +30,6 @@
       top: 80px;
       opacity: 0;
       transition: .5s ease;
-      background-color: #6b83b1;
-    }
-
-    .container:hover .overlay1{
-      opacity: 0.7;
     }
 
     .overlay2 {
@@ -50,7 +40,6 @@
       top: 214px;
       opacity: 0;
       transition: .5s ease;
-      background-color: #6b83b1;
     }
 
     .overlay3 {
@@ -61,7 +50,6 @@
       top: -60px;
       opacity: 0;
       transition: .5s ease;
-      background-color: #6b83b1;
     }
 
     .overlay5 {
@@ -72,7 +60,6 @@
 	    top:146px;
       opacity: 0;
       transition: .5s ease;
-      background-color: #6b83b1;
     }
 
     .overlay4 {
@@ -83,7 +70,6 @@
       top: 50px;
       opacity: 0;
       transition: .5s ease;
-      background-color: #6b83b1;
     }
 
     .overlay6 {
@@ -94,7 +80,6 @@
 	    top:147px;
       opacity: 0;
       transition: .5s ease;
-      background-color: #6b83b1;
     }
 
     .overlay7 {
@@ -105,7 +90,6 @@
       top: 70px;
       opacity: 0;
       transition: .5s ease;
-      background-color: #6b83b1;
     }
 
     .overlay8 {
@@ -116,7 +100,6 @@
       top: 56px;
       opacity: 0;
       transition: .5s ease;
-      background-color: #6b83b1;
     }
 
     .overlay9 {
@@ -127,38 +110,41 @@
 	    top:240px;
       opacity: 0;
       transition: .5s ease;
-      background-color: #f1c3c3;
     }
 
-    .container:hover .overlay2{
-      opacity: 0.8;
-    }
-
-    .container:hover .overlay3{
+    .container:hover + .overlay1{
       opacity: 0.7;
     }
 
-    .container:hover .overlay4{
+    .container:hover + .overlay2{
       opacity: 0.8;
     }
 
-    .container:hover .overlay5{
+    .container:hover + .overlay3{
+      opacity: 0.7;
+    }
+
+    .container:hover + .overlay4{
       opacity: 0.8;
     }
 
-    .container:hover .overlay6{
+    .container:hover + .overlay5{
+      opacity: 0.8;
+    }
+
+    .container:hover + .overlay6{
       opacity: 0.9;
     }
 
-    .container:hover .overlay7{
+    .container:hover + .overlay7{
       opacity: 0.7;
     }
 
-    .container:hover .overlay8{
+    .container:hover + .overlay8{
       opacity: 0.8;
     }
 
-    .container:hover .overlay9{
+    .container:hover + .overlay9{
       opacity: 1;
     }
 
@@ -193,11 +179,9 @@
         </div>
         <div class="container">
           <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png" alt="helpbutton" class="helpbutton">
-          <div class="overlay1">
-            <div class="cura1">童年时，记忆中的夏天总是从母亲手中递来的一角西瓜开始，因而在我个人历史的怀旧中，西瓜是夏天的窗户。<br><br>I always remember, during my
-              childhood, that summer began with a dime of watermelon handed to me by my mother. Thus, in my personal
-              history of nostalgia, watermelon is the window to summertime.<br><br><i>占位，小区居民，2022<br>Placeholder, Neighbors, 2022</i></div>
-          </div>
+        </div>
+        <div class="overlay1">
+          <img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/Group%2024.png" alt="over1" class="over1">
         </div>
       </div>
 
