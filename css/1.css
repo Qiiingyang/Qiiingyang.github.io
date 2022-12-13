@@ -12,26 +12,34 @@
 }
 .imglist{
 	position: absolute;
-	height: 596.5px;
+	height: 596px;
 	width: 1059px;
 	list-style: none;/*黑点消失*/
 }
 .picture{
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width:1059px;
+	top: -70px;
+	padding:0px 0px 0px 75px;
 	opacity: 0;/*透明度*/
 	/* transition: all 0.8s; */
 }
-.picture.active{opacity: 1;}
+.picture.active{
+	position: absolute;
+	width:1059px;
+	top: -70px;
+	padding:0px 0px 0px 75px;
+	opacity: 1;
+}
+
 .dotlist{
+	display: none;
 	position: relative;
 	top: 550px;
-	/* left: 587px; */
-	left: 50%;
+	left: 587px;
 	transform: translateX(-50%);
 	list-style: none;
-	/* bottom: 18px; */
+	bottom: 18px;
 	z-index: 200;
 	width: 300px;
 }
@@ -45,8 +53,7 @@
 	cursor: pointer;/*有手出现*/
 }
 .dot.active{background-color: white}
-.btn
-{
+.btn{
 	font-size: 50px;
 	height: 70px;width: 70px;
 	line-height: 70px;

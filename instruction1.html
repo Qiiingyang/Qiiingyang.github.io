@@ -7,6 +7,43 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Watermelon &mdash; An Accessible, Interactive Online Exhibition</title>
+	<style>
+		.hideleft{
+		  display: none;
+		}
+
+		.hideright{
+		  display: none;
+		}
+
+		.hidehome{
+		  display: none;
+		}
+
+		.hidehelp{
+		  display: none;
+		}
+
+		.rightbuttonh:hover + .hideright {
+		  display: block;
+		  color: rgb(98, 212, 177);
+		}
+
+		.leftbuttonh:hover + .hideleft {
+		  display: block;
+		  color: rgb(98, 212, 177);
+		}
+
+		.homepagebuttonh:hover + .hidehome {
+		  display: block;
+		  color: rgb(98, 212, 177);
+		}
+
+		.helpbuttonh:hover + .hidehelp {
+		  display: block;
+		  color: rgb(98, 212, 177);	
+		}
+	</style>
 </head>
 <body>
 	<div>
@@ -20,16 +57,17 @@
 	<div>
 		<a href="instruction2.html"><h2 class="titleins2"><u>Got It, Next</u></h2></a>
 	</div>
-	
 
-	<div>
-		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button.png" alt="rightbutton" class="rightbutton">
-		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button.png" alt="leftbutton" class="leftbutton">
-	</div>
+	<div class="rightbuttonh"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_button.png" alt="rightbutton" class="rightbutton"></div>
+	<div class="hideright">Turn Right</div>
 
-	<div>
-		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button.png" alt="homepagebutton" class="homepagebutton">
-		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png" alt="helpbutton" class="helpbutton">
-	</div>
+	<div class="leftbuttonh"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_button.png" alt="leftbutton" class="leftbutton"></div>
+	<div class="hideleft">Turn Left</div>
+
+	<div class="homepagebuttonh"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/homepage_button.png" alt="homepagebutton" class="homepagebutton"></div>
+	<div class="hidehome">Homepage</div>
+
+	<div class="helpbuttonh"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/help_button.png" alt="helpbutton" class="helpbutton"></div>
+	<div class="hidehelp">Help</div>
 </body>
 </html>

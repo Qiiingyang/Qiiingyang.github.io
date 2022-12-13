@@ -7,6 +7,34 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Watermelon &mdash; An Accessible, Interactive Online Exhibition</title>
+	<style>
+		.hideleft1{
+		  display: none;
+		}
+
+		.hideright1{
+		  display: none;
+		}
+
+		.hidehome1{
+		  display: none;
+		}
+
+		.rightbuttonh1:hover + .hideright1 {
+		  display: block;
+		  color: rgb(98, 212, 177);
+		}
+
+		.leftbuttonh1:hover + .hideleft1 {
+		  display: block;
+		  color: rgb(98, 212, 177);
+		}
+
+		.homepagebuttonh1:hover + .hidehome1 {
+		  display: block;
+		  color: rgb(98, 212, 177);
+		}
+	</style>
 </head>
 <body>
 	<div>
@@ -21,13 +49,19 @@
 		<a href="instruction3.html"><h2 class="titleins2">Got It, Next</h2></a>
 	</div>
 	
+	<div class="rightbuttonh1"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_key.png" alt="leftkey" class="leftkey"></div>
+	<div class="hideright1">Turn Left</div>
+
+	<div class="leftbuttonh1"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_key.png" alt="rightkey" class="rightkey"></div>
+	<div class="hideleft1">Turn Right</div>
+
 	<div>
-		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/left_key.png" alt="leftkey" class="leftkey">
-		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/right_key.png" alt="rightkey" class="rightkey">
 		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/up_key.png" alt="upkey" class="upkey">
 		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/down_key.png" alt="downkey" class="downkey">
 		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/blank_key.png" alt="blankkey" class="blankkey">
-		<img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/Q_key.png" alt="Qkey" class="Qkey">
 	</div>
+
+	<div class="homepagebuttonh1"><img src="https://raw.githubusercontent.com/Qiiingyang/Qiiingyang.github.io/main/images/Q_key.png" alt="Qkey" class="Qkey"></div>
+	<div class="hidehome1">Displaying Curatorial Statement</div>
 </body>
 </html>
