@@ -20,15 +20,17 @@
 	position: absolute;
 	width:1059px;
 	top: -70px;
-	padding:0px 0px 0px 75px;
+	height: 596px;
+    left: 91px;
 	opacity: 0;/*透明度*/
 	/* transition: all 0.8s; */
 }
 .picture.active{
 	position: absolute;
-	width:1059px;
 	top: -70px;
-	padding:0px 0px 0px 75px;
+	height: 596px;
+    width: 1059px;
+    left: 91px;
 	opacity: 1;
 }
 

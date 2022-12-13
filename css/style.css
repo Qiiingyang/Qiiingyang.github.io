@@ -75,15 +75,15 @@ header ul li {
 	width: 100%;
 }
 
-.slide-4  {
+.slide-5  {
 	background-color:black;
 }
 
-.slide-7  {
+.slide-6  {
 	background-color:black;
 }
 
-.slide-9  {
+.slide-8  {
 	background-color:black;
 }
 
@@ -412,13 +412,6 @@ a:active {
 	top:40px;
 }
 
-.artwork5_audio { 
-	position:absolute;
-	width:0px;
-	left:1222px;
-	top:626px;
-}
-
 .artwork6_1 { 
 	position:absolute;
 	width:263px;
@@ -552,6 +545,20 @@ a:active {
 	top:353px;
 }
 
+.artwork9_1 { 
+	position:absolute;
+	width:275px;
+	left:225px;
+	top:53px;
+}
+
+.artwork9_2 { 
+	position:absolute;
+	width:275px;
+	left:925px;
+	top:53px;
+}
+
 .cura1 {
 	font-family:Poppins;
 	font-weight: bold;
@@ -613,7 +620,7 @@ a:active {
 	text-align: center;
 	font-size: 22px;
 	position: absolute;
-	left:1285px;
+	left:982px;
 	top:645px;
 }
 
@@ -653,8 +660,8 @@ a:active {
 	text-align: center;
 	font-size: 14px;
 	position: absolute;
-	left:740px;
-	top:287px;
+	left:680px;
+	top:312px;
 }
 
 .hideleft1{
